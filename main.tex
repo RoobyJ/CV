@@ -1,0 +1,134 @@
+\documentclass{resume}
+\usepackage{enumitem}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Robert Jureczko}
+\address{+48 798 285 702 \\ Software Developer \\ Strzelce Opolskie, Poland}
+\address{
+    \href{mailto:robert.jureczko@proton.me}{robert.jureczko@proton.me} \\
+    \href{https://linkedin.com/in/robert-jureczko}{linkedin.com/in/jrobert-jureczko} \\
+    \href{https://github.com/RoobyJ}{github.com/RoobyJ}
+}
+
+\begin{document}
+
+\begin{rSection}{PROFILE}
+{
+    Skilled and dedicated Software Developer focused on delivering top-tier software solutions. 
+    I leverage my technical expertise and strong communication skills to achieve optimal outcomes. 
+    Motivated by a passion for learning and growth, I integrate advanced technologies and tools to craft innovative solutions.
+
+}
+\end{rSection}
+
+\begin{rSection}{Areas of expertise}
+    \begin{minipage}[t]{0.33\textwidth}
+        \begin{flushleft}
+            \begin{itemize}[leftmargin=0.5cm]
+                \setlength\itemsep{0.4em}
+                \item CI/CD – \textbf{Jenkins}
+                \item Programing Languages – \textbf{C\#, JavaScript, TypeScript, Python(Hobby), Zig(Hobby), C/C++(Hobby)}
+                \item Containers – \textbf{Docker}
+            \end{itemize}
+        \end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t]{0.33\textwidth}
+        \begin{flushleft}
+            \begin{itemize}[leftmargin=0.5cm]
+                \setlength\itemsep{0.4em}
+                \item Backend – \textbf{Entity Framework Core, ASP .NET Core, SignalR}
+                \item Frontend – \textbf{Vue.js, Vuetify, DevExtreme}
+            \end{itemize}
+        \end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t]{0.33\textwidth}
+        \begin{flushleft}
+            \begin{itemize}[leftmargin=0.5cm]
+                \setlength\itemsep{0.4em}
+                \item Databases – \textbf{PostgreSQL, SQL Server}
+                \item Markup \& Styling – \textbf{HTML5, CSS3, SCSS(SASS)}
+            \end{itemize}
+        \end{flushleft}
+    \end{minipage}
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Junior Fullstack Developer} \hfill December 2022 - Present \\ [0.4em]
+CODEFUSION Sp. z o.o. \hfill \textit{Opole, Poland}
+\begin{itemize}[leftmargin=0.5cm]
+\itemsep-3pt {}
+    \item Developing internal applications for client company based on business requirements and internal processes.
+    \item Improved development performance and app releases with proper time management and task prioritisation.
+    \item Providing code reviews and support to other developers. 
+    \item Taking part in desinging the architecture of new moduls/projects.
+    \item Introduced Test Containers to our projects to make the tests are performed on a database similar to the client's.
+    \item Mastering the frameworks \textbf{(Vue.js, Vuetify, .Net, Entity Framework Core)} and tools \textbf{(SQL, Docker)}.
+    \item Enhanced management of the version control system \textbf{(Git, Gitea, BitBucket)} to improve team collaboration.
+    \item Created \textbf{Jenkins} pipelines to build, test and deploy applications and Infrastructure as Code.
+    \item Providing testing \textbf{(Integration \& Unit \& E2E tests \& frontend Component tests)} to ensure the quality and usability of the software.
+\end{itemize}
+\textbf{Industrial Robot Programmer} \hfill December 2021 - November 2022 \\ [0.4em]
+RS Engineering Sp. z o.o. \hfill \textit{Strzelce Opolskie, Poland}
+\begin{itemize}[leftmargin=0.5cm]
+\itemsep-3pt {}
+    \item Programming online and offline of industrial robots (mostly Kuka, rarely ABB) for BMW group. 
+    \item Took part in projects for thoose car models: BMW G60, BMW G61, Rools Royce Cullican.
+    \item Writing helper scripts to automate repetitive operations \href{https://github.com/RoobyJ/KukaGo}{example program}
+    \item Creating documentation for completed projects.
+\end{itemize}
+\end{rSection}
+
+\pagebreak
+\begin{rSection}{PROJECTS}
+\begin{itemize}[leftmargin=0.5cm]
+\item \textbf{SmartHome} \\ [0.4em]
+           Building a app for controlling home automation devices and for programming and architecture skill improvement.
+           The project comprises two standalone applications: \href{https://github.com/RoobyJ/SmartHome}{SmartHome repo}, \href{https://github.com/RoobyJ/GarageController}{Garage Controller for esp32}\\ [0.4em]
+           \textit{Tech stack:} \textbf{.NET Core, PostgreSQL, Vue3, C++}
+\item \textbf{HttpServerZig} \\ [0.4em]
+           Building a simple Http 1.1 server to understand how they work from scratch and a good opportunity to learn the new language which is Zig. 
+           The project comprises two standalone applications: \href{https://github.com/RoobyJ/HttpServerZig}{HttpServerZig repo}\\ [0.4em]
+           \textit{Tech stack:} \textbf{Zig}
+\item \textbf{Datacar Web} \\ [0.4em]
+{Re-engineering an application that would gradually replace the current Datacar application (written in Clarion) by rewriting its functionality in .NET. The new implementation is faster and has more user-friendly interface.} \\ [0.4em]
+\textit{Tech stack:} \textbf{.NET 8, Vue3, Jenkins, SQL Server, Swagger/OpenAPI, DevExtreme}
+\item \textbf{Identity Provider} \\ [0.4em]
+{Engineering a system that is responsible for authenticating and providing information about the identity of users in the authentication process to enable access to the required resources.} \\ [0.4em]
+\textit{Tech stack:} \textbf{.NET 8, Vue3, ASP.NET MVC, Jenkins, SQL Server, PostgreSql, Swagger/OpenAPI, OpenID Connect + OAuth2.0}
+\item \textbf{Datacar Mobile} \\ [0.4em]
+{Developing a web application for an Android phone (Zebra TC26) that is currently used by car yard workers to locate vehicles in the yard and perform specific actions on them to prepare the vehicle for transfer to another party. Created a chat module for this app.} \\ [0.4em]
+\textit{Tech stack:} \textbf{.NET 8, Vue2, TypeScript, Vuetify, SCSS(SASS), Jenkins, SQL Server, WebSockets}
+\item \textbf{Demes Mobile} \\ [0.4em]
+{Creating a mobile application (TWA) for truck drivers that allows them to more easily track route statuses and facilitate other processes. The app is available on play store.} \\ [0.4em]
+\textit{Tech stack:} \textbf{.NET 8, Vue2, TypeScript, Vuetify, SCSS(SASS), Jenkins, SQL Server, Bubblewrap}
+\end{itemize}
+\item \end{rSection}
+
+\begin{rSection}{Education}
+{\bf Bachelor of Engineering in Automatic Control AND Robotics}, Opole University of Technology \hfill {2020 - 2024} \\
+
+{\bf Mechatronic technician}, Strzelce Opolskie CKZiU \hfill {2016 - 2020} \\
+\end{rSection}
+
+\begin{rSection}{Languages}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=0.5cm]
+        \item German – B2 Upper Intermediate
+        \item English – B2 Upper Intermediate
+        \item Polish – Native speaker
+    \end{itemize}
+\end{multicols}
+\end{rSection}
+
+\begin{rSection}{Interests}
+\begin{itemize}[leftmargin=0.5cm]
+        \item Cooking
+        \item Technology
+        \item Sports
+    \end{itemize}
+\end{rSection}
+
+\end{document}
